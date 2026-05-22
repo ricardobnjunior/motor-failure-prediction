@@ -1,6 +1,13 @@
 # Motor Failure Prediction
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-1.7-orange)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-f7931e?logo=scikitlearn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
+
 > **Predictive maintenance** — binary classification to detect motor failure one cycle in advance, using multivariate sensor data.
+
+**Author:** Ricardo Neves Junior &nbsp;|&nbsp; [LinkedIn](https://www.linkedin.com/in/ricardo-neves-junior/)
 
 ---
 
@@ -36,6 +43,14 @@ Key challenge: severe class imbalance (80 failures out of 16,138 observations �
 3. **Train/test split** — motor-level group split (64 train / 16 test) to prevent temporal leakage
 4. **Models** — Logistic Regression (baseline), Random Forest, XGBoost, XGBoost + SMOTE
 5. **Threshold optimization** — precision-recall curve analysis with recall ≥ 0.80 target
+
+## Visualizations
+
+| Sensor Degradation Trajectory | Feature Importance |
+|---|---|
+| ![degradation](fig_03_degradation.png) | ![importance](fig_07_feature_importance.png) |
+
+![confusion](fig_06_confusion_matrices.png)
 
 ## Results
 
